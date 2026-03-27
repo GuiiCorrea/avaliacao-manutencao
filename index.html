@@ -8,9 +8,17 @@
     body {
       font-family: Arial, sans-serif;
       background-color: #f4f6f8;
-      margin: 20px;
+      margin: 0;
       line-height: 1.6;
-      text-align: center; /* CENTRALIZA TUDO */
+      display: flex;
+      justify-content: center; /* centraliza horizontal */
+    }
+
+    .container {
+      width: 100%;
+      max-width: 700px;
+      text-align: center; /* centraliza o texto */
+      padding: 20px;
     }
 
     h1 {
@@ -34,15 +42,18 @@
 
     .resposta-texto {
       background-color: #fff;
-      padding: 10px;
+      padding: 12px;
       border-left: 4px solid green;
       margin: 10px auto;
-      max-width: 600px; /* deixa mais organizado no centro */
+      border-radius: 5px;
+      text-align: center; /* garante centralização do texto */
     }
   </style>
 </head>
 
 <body>
+
+<div class="container">
 
 <h1>Respostas da Avaliação de Manutenção de hardware</h1>
 
@@ -120,6 +131,8 @@ Montar as peças principais, conectar os cabos e ligar tudo corretamente.
 <div class="pergunta">20. Explique por que é importante instalar corretamente um sistema operacional.</div>
 <div class="resposta-texto">
 Porque assim o computador funciona bem, sem erros ou travamentos.
+</div>
+
 </div>
 
 </body>
